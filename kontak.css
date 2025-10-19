@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #222;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ======== Navbar ======== */
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.icon h2 {
+  color: #b87333;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-left: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #2563eb;
+}
+
+nav a:last-child {
+  background-color: #1e293b;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+nav a:last-child:hover {
+  background-color: #334155;
+}
+
+/* Content */
+/* ====== Bagian Kontak ====== */
+.contact-section {
+  background-color: #f5f6fa;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 20px 60px;
+}
+
+.contact-container {
+  background: #fff;
+  width: 85%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-info h1 {
+  color: #b87333; /* warna khas SMK TRI BINTANG */
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.info-item i {
+  color: #b87333;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* ====== Form ====== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #b87333;
+  box-shadow: 0 0 5px rgba(184,115,51,0.3);
+}
+
+.contact-form button {
+  background-color: #b87333;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #a06129;
+}
+
+/* ====== Responsif ====== */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
